@@ -1,0 +1,51 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background: url(./bg_img_1.webp);
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.card {
+    background-image: url('./bg_img_1.webp'); /* Replace with your image path */
+    background-size: cover; /* Cover the entire card */
+    background-position: center; /* Center the image */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px; /* Adjust width as needed */
+    backdrop-filter: blur(15px); /* Adjust the blur strength */
+    border: 1px solid rgba(255, 255, 255, 0.1); /* Optional: adds a subtle border */
+}
+
+/* Optional: To enhance the glass effect */
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(33, 33, 33, 0.5); /* Semi-transparent overlay */
+    border-radius: 10px; /* Same radius as the card */
+    z-index: 0; /* Behind the card content */
+}
+
+.card h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    position: relative; /* Make sure the text is above the overlay */
+    z-index: 1; /* Above the background overlay */
+}
+
+.card p {
+    line-height: 1.6;
+    font-size: 1em;
+    position: relative; /* Ensure text is above the overlay */
+    z-index: 1; /* Above the background overlay */
+}

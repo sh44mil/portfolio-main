@@ -1,0 +1,4 @@
+main(pink) : #e4b9b6
+text(black) : #0d0c0b
+sub(close_to_white) : #f8f8f5
+sub_1(cream) : #e1d0bf
